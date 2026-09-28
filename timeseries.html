@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Census II Decomposition | Fajrul Falla Kamal Musthofa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Fajrul <span>Falla</span></h2>
+            <p>STATISTICS STUDENT</p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">
+            Hire Me
+        </a>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="project-detail-hero">
+
+        <div class="project-detail-container">
+
+            <span class="detail-label">
+                GROUP PROJECT
+            </span>
+
+            <h1>
+                Census II Decomposition
+                for Time Series Analysis
+            </h1>
+
+            <p>
+                Application of Census II decomposition to identify
+                seasonal, trend-cycle, and irregular components
+                in monthly time series data.
+            </p>
+
+            <div class="detail-tags">
+                <span>Excel</span>
+                <span>Time Series</span>
+                <span>Census II</span>
+                <span>Seasonal Adjustment</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTENT -->
+    <main class="project-detail-section">
+
+        <div class="project-detail-container">
+
+
+            <!-- DESCRIPTION -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    PROJECT
+                </span>
+
+                <h2>
+                    Deskripsi Singkat
+                </h2>
+
+                <p>
+                    Project ini merupakan analisis kelompok yang menerapkan
+                    <strong>Metode Dekomposisi Census II</strong> pada data
+                    deret waktu bulanan periode 1949–1956.
+                </p>
+
+                <p>
+                    Metode Census II digunakan untuk memisahkan komponen
+                    deret waktu menjadi komponen musiman, trend-siklus,
+                    dan random sehingga pola dasar data dapat dianalisis
+                    dengan lebih jelas.
+                </p>
+
+                <p>
+                    Analisis dilakukan melalui beberapa tahapan, mulai dari
+                    penyesuaian hari perdagangan, penyesuaian musiman awal,
+                    hingga penyesuaian musiman akhir.
+                </p>
+
+            </section>
+
+
+            <!-- MY CONTRIBUTION -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    MY CONTRIBUTION
+                </span>
+
+                <h2>
+                    Final Seasonal Adjustment
+                </h2>
+
+                <p>
+                    Dalam project kelompok ini, saya berkontribusi pada
+                    tahap <strong>Penyesuaian Musiman Akhir</strong>.
+                    Tahap ini bertujuan menyempurnakan faktor musiman
+                    berdasarkan hasil penyesuaian musiman awal.
+                </p>
+
+                <div class="contribution-list">
+
+                    <div class="contribution-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <strong>Trend-Cycle Isolation</strong>
+                            <p>
+                                Mengisolasi komponen trend-siklus menggunakan
+                                weighted moving average 15-data Spencer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contribution-item">
+                        <i class="fas fa-percent"></i>
+                        <div>
+                            <strong>Seasonal-Random Ratio</strong>
+                            <p>
+                                Menghitung rasio musiman-random akhir
+                                berdasarkan data asli dan hasil Spencer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contribution-item">
+                        <i class="fas fa-filter"></i>
+                        <div>
+                            <strong>Outlier Adjustment</strong>
+                            <p>
+                                Mengidentifikasi dan mengganti nilai ekstrem
+                                sebelum pembentukan faktor musiman akhir.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contribution-item">
+                        <i class="fas fa-chart-area"></i>
+                        <div>
+                            <strong>Final Seasonal Factor</strong>
+                            <p>
+                                Membentuk faktor musiman akhir menggunakan
+                                MA 5×5 karena terdapat unsur random yang signifikan.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESULT -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    RESULTS
+                </span>
+
+                <h2>
+                    Hasil Analisis
+                </h2>
+
+                <div class="result-image">
+
+                    <img
+                        src="./assets/timeseries.png"
+                        alt="Hasil Final Seasonal Adjustment Census II"
+                    >
+
+                </div>
+
+                <div class="result-description">
+
+                    <p>
+                        Pada tahap penyesuaian musiman akhir, faktor musiman
+                        akhir diperoleh melalui proses smoothing menggunakan
+                        <strong>MA 5×5</strong>. Pemilihan MA 5×5 dilakukan
+                        karena terdapat unsur random yang signifikan pada data.
+                    </p>
+
+                    <p>
+                        Selanjutnya, deret data akhir yang telah disesuaikan
+                        menurut musim diperoleh dengan membagi data asli
+                        menggunakan faktor penyesuaian musiman akhir.
+                    </p>
+
+                    <p>
+                        Hasil akhir dekomposisi menghasilkan komponen
+                        <strong>musiman, trend-siklus, dan random</strong>
+                        yang dapat digunakan untuk memahami pola data
+                        deret waktu.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONCLUSION -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    CONCLUSION
+                </span>
+
+                <h2>
+                    Kesimpulan
+                </h2>
+
+                <p>
+                    Penerapan Metode Dekomposisi Census II menghasilkan
+                    proses penyesuaian musiman yang dilakukan secara bertahap,
+                    mulai dari penyesuaian awal hingga penyempurnaan faktor
+                    musiman akhir.
+                </p>
+
+                <p>
+                    Pada kontribusi saya, proses penyesuaian musiman akhir
+                    menghasilkan faktor musiman yang telah diperhalus,
+                    deret data yang telah disesuaikan menurut musim, serta
+                    estimasi komponen trend-siklus dan random.
+                </p>
+
+            </section>
+
+
+            <div class="detail-actions">
+                <a href="./assets/timeseries.pdf"
+                target="_blank"
+                class="btn primary">
+                    <i class="fas fa-file-pdf"></i>
+                    View Report
+                </a>
+
+                <a href="./assets/timeseries.pdf"
+                download
+                class="btn secondary">
+                    <i class="fas fa-download"></i>
+                    Download PDF
+                </a>
+            </div>
+
+
+            <!-- BACK -->
+            <div class="detail-back">
+
+                <a href="projects.html" class="btn primary">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Fajrul <span>Falla</span>
+            </h3>
+
+            <p>
+                Statistics Student & Data Analyst
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 Fajrul Falla Kamal Musthofa.
+            All rights reserved.
+        </p>
+
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/fajrul-falla-kamal-musthofa-932a87289/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

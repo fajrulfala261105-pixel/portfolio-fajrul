@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-Medoids Clustering | Fajrul Falla Kamal Musthofa</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Fajrul <span>Falla</span></h2>
+            <p>STATISTICS STUDENT</p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+
+         <a href="index.html#contact" class="nav-button">
+            Hire Me
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         PROJECT HERO
+    ========================== -->
+    <section class="project-detail-hero">
+
+        <div class="project-detail-container">
+
+            <span class="detail-label">
+                DATA SCIENCE PROJECT
+            </span>
+
+            <h1>
+                K-Medoids Clustering pada
+                Pengelompokan Puskesmas
+                Kabupaten Boyolali
+            </h1>
+
+            <div class="detail-tags">
+                <span>R</span>
+                <span>K-Medoids</span>
+                <span>Clustering</span>
+                <span>Statistics</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECT CONTENT
+    ========================== -->
+    <main class="project-detail-section">
+
+        <div class="project-detail-container">
+
+
+            <!-- =========================
+                 DESKRIPSI
+            ========================== -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    PROJECT
+                </span>
+
+                <h2>
+                    Deskripsi Singkat
+                </h2>
+
+                <p>
+                    Analisis ini menggunakan data kelayakan
+                    <strong>Tempat Pengelolaan Pangan (TPP)</strong>
+                    pada 25 Puskesmas di Kabupaten Boyolali
+                    tahun 2024.
+                </p>
+
+                <p>
+                    Data terdiri dari empat variabel, yaitu
+                    <strong>Jasa Boga, Restoran, Depot Air Minum,
+                    dan Rumah Makan</strong>. Data diperoleh dari
+                    Dinas Komunikasi dan Informatika Kabupaten
+                    Boyolali.
+                </p>
+
+                <p>
+                    Metode <strong>K-Medoids Clustering</strong>
+                    digunakan untuk mengelompokkan Puskesmas
+                    berdasarkan kemiripan karakteristik data.
+                    Tahapan analisis meliputi standardisasi data,
+                    deteksi outlier menggunakan Mahalanobis Distance,
+                    penentuan jumlah cluster menggunakan Silhouette
+                    Coefficient, dan penerapan K-Medoids.
+                </p>
+
+
+                <!-- LINK DATA -->
+                <div class="data-source">
+
+                    <div class="data-source-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <div class="data-source-text">
+
+                        <span>
+                            DATA SOURCE
+                        </span>
+
+                        <h3>
+                            Dinas Komunikasi dan Informatika
+                            Kabupaten Boyolali
+                        </h3>
+
+                    </div>
+
+                    <a
+                        href="https://data.boyolali.go.id/dataset/persentase-tpp-yg-memenuhi-syarat-kesehatan-mnrt-kec-kab-byl-th-2024/resource/9d5d0584-74c9-4b5b-af57-8c8e10f90146"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="source-button"
+                    >
+                        View Data
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 HASIL
+            ========================== -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    RESULTS
+                </span>
+
+                <h2>
+                    Hasil Analisis
+                </h2>
+
+
+                <!-- GAMBAR HASIL -->
+                <div class="result-image">
+                    <img
+                        src="./assets/cluster.png"
+                        alt="Hasil K-Medoids Clustering"
+                    >
+                </div>
+
+                <!-- PENJELASAN HASIL -->
+                <div class="result-description">
+
+                    <p>
+                        Hasil analisis menunjukkan bahwa jumlah
+                        cluster optimal adalah
+                        <strong>3 cluster</strong> berdasarkan
+                        Silhouette Coefficient.
+                    </p>
+
+                    <p>
+                        Ketiga cluster memiliki karakteristik yang
+                        berbeda berdasarkan variabel Tempat
+                        Pengelolaan Pangan (TPP).
+                    </p>
+
+
+                    <div class="cluster-summary">
+
+                        <div class="cluster-item">
+
+                            <span>
+                                Cluster 1
+                            </span>
+
+                            <p>
+                                Karakteristik TPP relatif sedang
+                                dan lebih merata.
+                            </p>
+
+                        </div>
+
+
+                        <div class="cluster-item">
+
+                            <span>
+                                Cluster 2
+                            </span>
+
+                            <p>
+                                Karakteristik TPP relatif tinggi.
+                            </p>
+
+                        </div>
+
+
+                        <div class="cluster-item">
+
+                            <span>
+                                Cluster 3
+                            </span>
+
+                            <p>
+                                Karakteristik TPP relatif lebih
+                                rendah dan cenderung tidak merata.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 KESIMPULAN
+            ========================== -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    CONCLUSION
+                </span>
+
+                <h2>
+                    Kesimpulan
+                </h2>
+
+                <p>
+                    Metode <strong>K-Medoids berhasil mengelompokkan
+                    25 Puskesmas menjadi 3 cluster</strong>
+                    berdasarkan karakteristik Tempat Pengelolaan
+                    Pangan (TPP).
+                </p>
+
+                <p>
+                    Hasil clustering memberikan gambaran mengenai
+                    perbedaan karakteristik TPP antar kelompok
+                    Puskesmas di Kabupaten Boyolali.
+                </p>
+
+            </section>
+
+
+            <div class="detail-actions">
+
+                <a
+                    href="./assets/clustering.pdf"
+                    target="_blank"
+                    class="btn primary"
+                >
+                    <i class="fas fa-file-pdf"></i>
+                    View Report
+                </a>
+
+                <a
+                    href="./assets/clustering.pdf"
+                    download
+                    class="btn secondary"
+                >
+                    <i class="fas fa-download"></i>
+                    Download PDF
+                </a>
+
+            </div>
+
+            <!-- =========================
+                 BACK
+            ========================== -->
+            <div class="detail-back">
+
+                <a href="projects.html" class="btn primary">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                    Back to Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+   <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Fajrul <span>Falla</span>
+            </h3>
+
+            <p>
+                Statistics Student & Data Analyst
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 Fajrul Falla Kamal Musthofa.
+            All rights reserved.
+        </p>
+
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/fajrul-falla-kamal-musthofa-932a87289/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

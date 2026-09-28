@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stock Portfolio Optimization | Fajrul Falla Kamal Musthofa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Fajrul <span>Falla</span></h2>
+            <p>STATISTICS STUDENT</p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">
+            Hire Me
+        </a>
+
+    </header>
+
+
+<!-- HERO -->
+<section class="project-detail-hero">
+
+    <div class="project-detail-container">
+
+        <span class="detail-label">
+            DATA ANALYST PROJECT
+        </span>
+
+        <h1>
+            Stock Portfolio Optimization
+        </h1>
+
+        <p class="detail-hero-description">
+            Analisis optimasi portofolio saham menggunakan 30 saham
+            dengan mempertimbangkan return, risiko, korelasi,
+            Excess Return to Beta, dan Sharpe Ratio.
+        </p>
+
+        <div class="detail-tags">
+            <span>30 Stocks</span>
+            <span>Portfolio Analysis</span>
+            <span>ERB</span>
+            <span>Sharpe Ratio</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="project-detail-section">
+
+    <div class="project-detail-container">
+
+
+        <!-- OVERVIEW -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                PROJECT
+            </span>
+
+            <h2>
+                Deskripsi Singkat
+            </h2>
+
+            <p>
+                Project ini melakukan analisis optimasi portofolio
+                berdasarkan <strong>30 saham</strong> yang digunakan
+                sebagai universe investasi.
+            </p>
+
+            <p>
+                Analisis dilakukan dengan menghitung return saham,
+                korelasi antar saham, Beta, Alpha, variance residual,
+                serta <strong>Excess Return to Beta (ERB)</strong>
+                sebagai dasar proses seleksi saham.
+            </p>
+
+            <p>
+                Setelah proses seleksi, diperoleh delapan saham yang
+                digunakan dalam pembentukan portofolio, kemudian
+                dievaluasi menggunakan <strong>Sharpe Ratio</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- DATASET -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                DATA
+            </span>
+
+            <h2>
+                Investment Universe
+            </h2>
+
+            <div class="var-info-grid">
+
+                <div class="var-info-card">
+                    <span>INITIAL UNIVERSE</span>
+                    <strong>30 Stocks</strong>
+                    <p>Saham yang digunakan dalam analisis awal.</p>
+                </div>
+
+                <div class="var-info-card">
+                    <span>MARKET INDEX</span>
+                    <strong>IHSG</strong>
+                    <p>Digunakan sebagai benchmark pasar.</p>
+                </div>
+
+                <div class="var-info-card">
+                    <span>SELECTION</span>
+                    <strong>ERB</strong>
+                    <p>Excess Return to Beta.</p>
+                </div>
+
+                <div class="var-info-card">
+                    <span>FINAL PORTFOLIO</span>
+                    <strong>8 Stocks</strong>
+                    <p>Saham terpilih untuk pembentukan portofolio.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- METHOD -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                METHODOLOGY
+            </span>
+
+            <h2>
+                Analytical Process
+            </h2>
+
+            <div class="cluster-summary">
+
+                <div class="cluster-item">
+                    <span>01 — Return Analysis</span>
+                    <p>
+                        Menghitung return saham dari data harga
+                        historis masing-masing saham.
+                    </p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>02 — Risk & Correlation</span>
+                    <p>
+                        Menganalisis hubungan antar saham serta
+                        karakteristik risiko masing-masing aset.
+                    </p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>03 — ERB Selection</span>
+                    <p>
+                        Menggunakan Excess Return to Beta sebagai
+                        dasar pengurutan dan seleksi saham.
+                    </p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>04 — Portfolio Evaluation</span>
+                    <p>
+                        Mengevaluasi kombinasi saham terpilih
+                        menggunakan Sharpe Ratio.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL STOCKS -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                RESULTS
+            </span>
+
+            <h2>
+                Selected Portfolio
+            </h2>
+
+            <p>
+                Berdasarkan hasil perhitungan pada dataset, delapan
+                saham digunakan dalam pembentukan portofolio akhir.
+            </p>
+
+            <div class="cluster-summary">
+
+                <div class="cluster-item">
+                    <span>ANTM</span>
+                    <p>Bobot: 26.12%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>PGAS</span>
+                    <p>Bobot: 30.43%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>MDKA</span>
+                    <p>Bobot: 13.89%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>BRPT</span>
+                    <p>Bobot: 9.63%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>ASII</span>
+                    <p>Bobot: 11.51%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>TLKM</span>
+                    <p>Bobot: 6.58%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>JPFA</span>
+                    <p>Bobot: 0.76%</p>
+                </div>
+
+                <div class="cluster-item">
+                    <span>EXCL</span>
+                    <p>Bobot: 1.08%</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PERFORMANCE -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                PERFORMANCE
+            </span>
+
+            <h2>
+                Portfolio Performance
+            </h2>
+
+            <div class="portfolio-result">
+
+                <div class="portfolio-result-card">
+                    <span>SHARPE RATIO</span>
+
+                    <strong>0.1718</strong>
+
+                    <p>
+                        Risk-adjusted performance
+                    </p>
+                </div>
+
+                <div class="portfolio-result-card">
+                    <span>AVERAGE RETURN</span>
+
+                    <strong>0.3444%</strong>
+
+                    <p>
+                        Average daily portfolio return
+                    </p>
+                </div>
+
+                <div class="portfolio-result-card">
+                    <span>PORTFOLIO RISK</span>
+
+                    <strong>1.9222%</strong>
+
+                    <p>
+                        Standard deviation of return
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="result-description">
+
+                <p>
+                    Berdasarkan hasil perhitungan, portofolio menghasilkan
+                    <strong>rata-rata return sebesar 0,3444% per hari</strong>.
+                    Sementara itu, tingkat risiko yang diukur menggunakan
+                    standar deviasi sebesar <strong>1,9222%</strong>.
+                </p>
+
+                <p>
+                    Nilai <strong>Sharpe Ratio sebesar 0,1718</strong> menunjukkan
+                    bahwa setiap satu unit risiko yang ditanggung portofolio
+                    menghasilkan sekitar <strong>0,1718 unit excess return</strong>.
+                    Dengan kata lain, Sharpe Ratio digunakan untuk melihat
+                    seberapa efisien return tambahan yang diperoleh dibandingkan
+                    dengan risiko yang ditanggung.
+                </p>
+
+                <p>
+                    Nilai Sharpe yang positif menunjukkan bahwa portofolio
+                    menghasilkan excess return terhadap tingkat bebas risiko
+                    yang digunakan dalam perhitungan. Namun, berdasarkan
+                    interpretasi yang tercantum dalam analisis, nilai 0,1718
+                    masih menunjukkan tingkat efisiensi yang relatif rendah.
+                    Artinya, masih terdapat risiko yang cukup besar dibandingkan
+                    dengan excess return yang dihasilkan portofolio.
+                </p>
+
+                <p>
+                    Oleh karena itu, hasil ini menunjukkan bahwa pembentukan
+                    portofolio telah menghasilkan return positif, tetapi
+                    kombinasi return dan risiko yang diperoleh masih dapat
+                    dievaluasi lebih lanjut untuk meningkatkan efisiensi
+                    portofolio.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+        <section class="detail-block">
+
+            <span class="section-label">
+                CONCLUSION
+            </span>
+
+            <h2>
+                Kesimpulan
+            </h2>
+
+            <p>
+                Analisis dimulai dengan menggunakan <strong>30 saham</strong>
+                sebagai universe investasi. Selanjutnya dilakukan analisis
+                return, risiko, korelasi, Beta, Alpha, variance residual,
+                dan <strong>Excess Return to Beta (ERB)</strong> untuk
+                menentukan saham yang digunakan dalam pembentukan portofolio.
+            </p>
+
+            <p>
+                Berdasarkan proses seleksi tersebut, diperoleh
+                <strong>8 saham</strong>, yaitu ANTM, PGAS, MDKA, BRPT, ASII,
+                TLKM, JPFA, dan EXCL. Masing-masing saham kemudian diberikan
+                bobot berdasarkan hasil perhitungan optimasi portofolio.
+            </p>
+
+            <p>
+                Portofolio yang terbentuk menghasilkan
+                <strong>rata-rata return sebesar 0,3444% per hari</strong>
+                dengan tingkat risiko sebesar <strong>1,9222%</strong>.
+                Sementara itu, <strong>Sharpe Ratio sebesar 0,1718</strong>
+                menunjukkan bahwa portofolio menghasilkan sekitar 0,1718
+                unit excess return untuk setiap satu unit risiko yang
+                ditanggung.
+            </p>
+
+            <p>
+                Dengan demikian, portofolio menghasilkan return positif,
+                tetapi nilai Sharpe Ratio menunjukkan bahwa efisiensi
+                hubungan antara return dan risiko masih relatif rendah.
+                Hasil ini memberikan gambaran bahwa pemilihan saham dan
+                alokasi bobot yang diperoleh dari analisis dapat menjadi
+                dasar evaluasi lebih lanjut dalam pembentukan portofolio.
+            </p>
+
+        </section>
+
+            <div class="detail-actions">
+
+                <a href="./assets/072_FajrulFallaKamalM_TugasIDX80.xlsx"
+                download
+                class="btn secondary">
+                    <i class="fas fa-download"></i>
+                    Download Excel
+                </a>
+
+            </div>
+
+            <!-- BACK -->
+            <div class="detail-back">
+
+                <a href="projects.html"
+                   class="btn primary">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                    Back to Projects
+
+                </a>
+
+            </div>
+
+    </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Fajrul <span>Falla</span>
+            </h3>
+
+            <p>
+                Statistics Student & Data Analyst
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 Fajrul Falla Kamal Musthofa.
+            All rights reserved.
+        </p>
+
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/fajrul-falla-kamal-musthofa-932a87289/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

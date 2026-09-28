@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Customer Churn Prediction | Fajrul Falla Kamal Musthofa
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Fajrul <span>Falla</span></h2>
+            <p>STATISTICS STUDENT</p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">
+            Hire Me
+        </a>
+
+    </header>
+
+
+<!-- HERO -->
+
+<section class="project-detail-hero">
+
+    <div class="project-detail-container">
+
+        <span class="detail-label">
+            MACHINE LEARNING PROJECT
+        </span>
+
+        <h1>
+            Customer Churn Prediction
+        </h1>
+
+        <p class="detail-hero-description">
+            End-to-end Machine Learning project for predicting
+            customer churn based on customer characteristics,
+            services, contract type, tenure, and billing information.
+        </p>
+
+        <div class="detail-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Classification</span>
+            <span>XGBoost</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="project-detail-section">
+
+    <div class="project-detail-container">
+
+
+        <!-- PROJECT -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                PROJECT
+            </span>
+
+            <h2>
+                Deskripsi Singkat
+            </h2>
+
+            <p>
+                Customer churn merupakan kondisi ketika pelanggan
+                berhenti menggunakan suatu layanan. Project ini
+                menggunakan Machine Learning untuk memprediksi
+                apakah seorang pelanggan berpotensi mengalami churn.
+            </p>
+
+            <p>
+                Analisis dilakukan secara end-to-end mulai dari
+                data loading, data understanding, data cleaning,
+                Exploratory Data Analysis, feature engineering,
+                preprocessing, model development, model evaluation,
+                interpretasi model, hingga simulasi prediksi
+                customer baru.
+            </p>
+
+            <p>
+                Dataset yang digunakan adalah
+                <strong>Telco Customer Churn</strong>, yang berisi
+                karakteristik pelanggan, informasi layanan,
+                kontrak, lama berlangganan, dan biaya.
+            </p>
+
+        </section>
+
+
+        <!-- DATASET -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                DATASET
+            </span>
+
+            <h2>
+                Customer Data
+            </h2>
+
+            <div class="var-info-grid">
+
+                <div class="var-info-card">
+
+                    <span>DATASET</span>
+
+                    <strong>
+                        Telco Customer Churn
+                    </strong>
+
+                    <p>
+                        Customer subscription and service data.
+                    </p>
+
+                </div>
+
+
+                <div class="var-info-card">
+
+                    <span>TARGET</span>
+
+                    <strong>
+                        Churn
+                    </strong>
+
+                    <p>
+                        Yes / No customer churn status.
+                    </p>
+
+                </div>
+
+
+                <div class="var-info-card">
+
+                    <span>FEATURE TYPES</span>
+
+                    <strong>
+                        Numeric + Categorical
+                    </strong>
+
+                    <p>
+                        Customer, service, contract and billing features.
+                    </p>
+
+                </div>
+
+
+                <div class="var-info-card">
+
+                    <span>PROBLEM TYPE</span>
+
+                    <strong>
+                        Classification
+                    </strong>
+
+                    <p>
+                        Binary customer churn prediction.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDA -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                EXPLORATORY DATA ANALYSIS
+            </span>
+
+            <h2>
+                Customer Churn Patterns
+            </h2>
+
+            <p>
+                Exploratory Data Analysis dilakukan untuk memahami
+                karakteristik pelanggan dan melihat pola churn
+                berdasarkan beberapa variabel utama.
+            </p>
+
+            <div class="cluster-summary">
+
+                <div class="cluster-item">
+
+                    <span>
+                        Contract
+                    </span>
+
+                    <p>
+                        Pelanggan dengan kontrak Month-to-month
+                        menunjukkan proporsi churn yang lebih tinggi
+                        dibandingkan kontrak lainnya.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        Tenure
+                    </span>
+
+                    <p>
+                        Pelanggan dengan lama berlangganan lebih pendek
+                        menunjukkan proporsi churn yang lebih tinggi
+                        pada dataset.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        Monthly Charges
+                    </span>
+
+                    <p>
+                        Customer yang churn memiliki rata-rata dan
+                        median MonthlyCharges yang lebih tinggi.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        Internet Service
+                    </span>
+
+                    <p>
+                        Kategori Fiber optic menunjukkan proporsi churn
+                        yang lebih tinggi dibanding kategori lainnya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- METHODOLOGY -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                MACHINE LEARNING
+            </span>
+
+            <h2>
+                Model Development
+            </h2>
+
+            <p>
+                Empat algoritma klasifikasi dikembangkan dan
+                dibandingkan untuk memprediksi customer churn.
+            </p>
+
+            <div class="cluster-summary">
+
+                <div class="cluster-item">
+
+                    <span>
+                        Logistic Regression
+                    </span>
+
+                    <p>
+                        Digunakan sebagai baseline model dan memberikan
+                        interpretasi koefisien yang lebih mudah.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        Decision Tree
+                    </span>
+
+                    <p>
+                        Model klasifikasi berbasis aturan percabangan
+                        untuk memisahkan kelas churn.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        Random Forest
+                    </span>
+
+                    <p>
+                        Ensemble model yang menggabungkan banyak
+                        Decision Tree.
+                    </p>
+
+                </div>
+
+
+                <div class="cluster-item">
+
+                    <span>
+                        XGBoost
+                    </span>
+
+                    <p>
+                        Gradient boosting model untuk meningkatkan
+                        kemampuan klasifikasi.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PREPROCESSING -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                PREPROCESSING
+            </span>
+
+            <h2>
+                Data Preparation
+            </h2>
+
+            <p>
+                Variabel <strong>TotalCharges</strong> yang awalnya
+                terbaca sebagai object dikonversi menjadi numerik.
+                Sebanyak 11 observasi memiliki nilai kosong dan
+                diisi dengan 0 setelah diperiksa bahwa observasi
+                tersebut memiliki tenure = 0.
+            </p>
+
+            <p>
+                Variabel numerik diproses menggunakan
+                <strong>StandardScaler</strong>, sedangkan variabel
+                kategorikal diproses menggunakan
+                <strong>One-Hot Encoding</strong>.
+            </p>
+
+            <p>
+                Seluruh preprocessing ditempatkan dalam Pipeline
+                bersama model untuk menjaga konsistensi transformasi
+                antara data training dan testing.
+            </p>
+
+        </section>
+
+
+        <!-- PERFORMANCE -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                MODEL PERFORMANCE
+            </span>
+
+            <h2>
+                Model Evaluation
+            </h2>
+
+            <div class="portfolio-result">
+
+
+                <div class="portfolio-result-card">
+
+                    <span>
+                        LOGISTIC REGRESSION
+                    </span>
+
+                    <strong>
+                        80.70%
+                    </strong>
+
+                    <p>
+                        Accuracy
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-result-card">
+
+                    <span>
+                        LOGISTIC REGRESSION
+                    </span>
+
+                    <strong>
+                        84.22%
+                    </strong>
+
+                    <p>
+                        ROC-AUC
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-result-card">
+
+                    <span>
+                        CHURN RECALL
+                    </span>
+
+                    <strong>
+                        56.15%
+                    </strong>
+
+                    <p>
+                        Recall for Churn class
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-result-card">
+
+                    <span>
+                        XGBOOST
+                    </span>
+
+                    <strong>
+                        84.62%
+                    </strong>
+
+                    <p>
+                        ROC-AUC
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                Model dievaluasi menggunakan Accuracy, Precision,
+                Recall, F1-Score, dan ROC-AUC. Pada Logistic Regression,
+                diperoleh Accuracy sebesar <strong>80,70%</strong>,
+                Precision kelas Churn sebesar <strong>66,04%</strong>,
+                Recall sebesar <strong>56,15%</strong>, dan
+                F1-Score sebesar <strong>60,69%</strong>.
+            </p>
+
+            <p>
+                ROC-AUC Logistic Regression sebesar
+                <strong>84,22%</strong>, sedangkan XGBoost memperoleh
+                ROC-AUC sebesar <strong>84,62%</strong>.
+                ROC-AUC digunakan untuk melihat kemampuan model
+                membedakan pelanggan churn dan tidak churn pada
+                berbagai threshold.
+            </p>
+
+        </section>
+
+
+        <!-- INTERPRETATION -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                MODEL INTERPRETATION
+            </span>
+
+            <h2>
+                Feature Interpretation
+            </h2>
+
+            <p>
+                Logistic Regression digunakan untuk menginterpretasikan
+                kontribusi fitur terhadap prediksi churn melalui
+                koefisien model dan Odds Ratio.
+            </p>
+
+            <p>
+                Analisis interpretasi menunjukkan bahwa karakteristik
+                seperti jenis kontrak, tenure, jenis layanan internet,
+                dan metode pembayaran memiliki kontribusi terhadap
+                prediksi customer churn pada model.
+            </p>
+
+        </section>
+
+
+        <!-- PREDICTION -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                PREDICTION
+            </span>
+
+            <h2>
+                Customer Churn Prediction
+            </h2>
+
+            <div class="var-main-result">
+
+                <div class="var-result-card">
+
+                    <span>
+                        PREDICTION
+                    </span>
+
+                    <strong>
+                        CHURN
+                    </strong>
+
+                    <p>
+                        Example customer prediction
+                    </p>
+
+                </div>
+
+
+                <div class="var-result-card">
+
+                    <span>
+                        CHURN PROBABILITY
+                    </span>
+
+                    <strong>
+                        76.47%
+                    </strong>
+
+                    <p>
+                        Predicted probability
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p>
+                Pada simulasi customer baru, model Logistic Regression
+                menghasilkan prediksi <strong>Churn</strong> dengan
+                probabilitas sebesar <strong>76,47%</strong>.
+            </p>
+
+        </section>
+
+
+        <!-- BUSINESS INSIGHTS -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                BUSINESS INSIGHTS
+            </span>
+
+            <h2>
+                Key Insights
+            </h2>
+
+            <p>
+                Hasil EDA dan pemodelan menunjukkan beberapa karakteristik
+                yang berkaitan dengan customer churn, terutama jenis
+                kontrak, lama berlangganan, biaya bulanan, dan jenis
+                layanan internet.
+            </p>
+
+            <p>
+                Insight tersebut dapat digunakan sebagai informasi
+                pendukung untuk mengidentifikasi pelanggan dengan
+                probabilitas churn yang lebih tinggi dan membantu
+                perancangan strategi retensi pelanggan.
+            </p>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="detail-block">
+
+            <span class="section-label">
+                CONCLUSION
+            </span>
+
+            <h2>
+                Kesimpulan
+            </h2>
+
+            <p>
+                Project ini berhasil membangun pipeline Machine Learning
+                end-to-end untuk memprediksi customer churn menggunakan
+                dataset Telco Customer Churn.
+            </p>
+
+            <p>
+                Empat algoritma klasifikasi dibandingkan, yaitu
+                Logistic Regression, Decision Tree, Random Forest,
+                dan XGBoost, dengan preprocessing menggunakan
+                StandardScaler dan One-Hot Encoding.
+            </p>
+
+            <p>
+                Logistic Regression menghasilkan Accuracy sebesar
+                <strong>80,70%</strong> dan ROC-AUC sebesar
+                <strong>84,22%</strong>. XGBoost memperoleh ROC-AUC
+                sebesar <strong>84,62%</strong> pada pengujian yang
+                dilakukan dalam notebook.
+            </p>
+
+            <p>
+                Project ini juga menunjukkan bagaimana hasil model
+                dapat digunakan tidak hanya untuk melakukan prediksi,
+                tetapi juga untuk memahami karakteristik pelanggan
+                yang berkaitan dengan churn melalui feature
+                interpretation dan Odds Ratio.
+            </p>
+
+        </section>
+
+
+        <!-- ACTION -->
+
+        <div class="detail-actions">
+
+            <a href="./assets/Customer_Churn_Prediction_Using_Machine_Learning_Documented.ipynb"
+               download
+               class="btn secondary">
+
+                <i class="fas fa-file-code"></i>
+                Download Notebook
+
+            </a>
+
+        </div>
+
+
+        <div class="detail-back">
+
+            <a href="projects.html" class="btn primary">
+
+                <i class="fas fa-arrow-left"></i>
+                Back to Projects
+
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Fajrul <span>Falla</span>
+            </h3>
+
+            <p>
+                Statistics Student & Data Analyst
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 Fajrul Falla Kamal Musthofa.
+            All rights reserved.
+        </p>
+
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/fajrul-falla-kamal-musthofa-932a87289/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

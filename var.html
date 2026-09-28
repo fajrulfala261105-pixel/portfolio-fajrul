@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Value at Risk Analysis | Fajrul Falla Kamal Musthofa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h2>Fajrul <span>Falla</span></h2>
+            <p>STATISTICS STUDENT</p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="index.html" >Home</a>
+            <a href="#projects" class="active">Projects</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">
+            Hire Me
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="project-detail-hero">
+        <div class="project-detail-container">
+
+            <span class="detail-label">DATA ANALYST PROJECT</span>
+
+            <h1>
+                Historical Value at Risk (VaR) Analysis — SMGR
+            </h1>
+
+            <p class="detail-hero-description">
+                Analisis risiko investasi saham PT Semen Indonesia (Persero) Tbk
+                menggunakan pendekatan Historical Value at Risk berdasarkan
+                return historis.
+            </p>
+
+            <div class="detail-tags">
+                <span>SMGR</span>
+                <span>Historical VaR</span>
+                <span>Risk Analysis</span>
+                <span>Statistics</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="project-detail-section">
+
+        <div class="project-detail-container">
+
+
+            <!-- PROJECT OVERVIEW -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    PROJECT
+                </span>
+
+                <h2>
+                    Deskripsi Singkat
+                </h2>
+
+                <p>
+                    Project ini melakukan analisis risiko investasi
+                    menggunakan metode <strong>Historical Value at Risk
+                    (VaR)</strong>. Analisis dilakukan berdasarkan data
+                    harga historis dan log return untuk mengestimasi
+                    potensi kerugian investasi.
+                </p>
+
+                <p>
+                    Tahapan analisis meliputi pengolahan data harga,
+                    perhitungan log return, statistik deskriptif,
+                    perhitungan Historical VaR, serta estimasi kerugian
+                    berdasarkan beberapa holding period.
+                </p>
+
+
+                <div class="var-info-grid">
+
+                    <div class="var-info-card">
+
+                        <div class="var-info-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <span>DATA</span>
+
+                        <h3>
+                            Historical Price
+                        </h3>
+
+                    </div>
+
+
+                    <div class="var-info-card">
+
+                        <div class="var-info-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <span>RETURN</span>
+
+                        <h3>
+                            Log Return
+                        </h3>
+
+                    </div>
+
+
+                    <div class="var-info-card">
+
+                        <div class="var-info-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+
+                        <span>METHOD</span>
+
+                        <h3>
+                            Historical VaR
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- DESCRIPTIVE STATISTICS -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    DESCRIPTIVE STATISTICS
+                </span>
+
+                <h2>
+                    Return Statistics
+                </h2>
+
+                <p>
+                    Statistik deskriptif digunakan untuk memberikan
+                    gambaran karakteristik dari log return yang
+                    digunakan dalam analisis risiko.
+                </p>
+
+
+                <div class="var-statistics-grid">
+
+                    <div class="var-stat-card">
+                        <span>Mean</span>
+                        <strong>-0.001373</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Variance</span>
+                        <strong>0.001650</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Std. Deviation</span>
+                        <strong>0.040617</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Minimum</span>
+                        <strong>-0.159195</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Maximum</span>
+                        <strong>0.139356</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Skewness</span>
+                        <strong>0.035395</strong>
+                    </div>
+
+                    <div class="var-stat-card">
+                        <span>Kurtosis</span>
+                        <strong>3.608936</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- VAR RESULT -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    VALUE AT RISK
+                </span>
+
+                <h2>
+                    Historical VaR Result
+                </h2>
+
+                <p>
+                    Berdasarkan perhitungan Historical VaR pada tingkat
+                    signifikansi sebesar 5%, nilai VaR yang diperoleh
+                    adalah:
+                </p>
+
+
+                <div class="var-main-result">
+
+                    <div class="var-result-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+
+                    <div class="var-result-content">
+
+                        <span>
+                            HISTORICAL VaR — α = 5%
+                        </span>
+
+                        <strong>
+                            -6.1818%
+                        </strong>
+
+                        <p>
+                            Potential loss estimated from the historical
+                            return distribution.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="var-explanation">
+
+                    <p>
+                        Nilai Historical VaR sebesar
+                        <strong>-6.1818%</strong> menunjukkan estimasi
+                        potensi kerugian berdasarkan distribusi return
+                        historis pada tingkat signifikansi 5%.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- INVESTMENT LOSS -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    INVESTMENT RISK
+                </span>
+
+                <h2>
+                    Estimated Investment Loss
+                </h2>
+
+                <p>
+                    Dengan asumsi nilai investasi awal sebesar
+                    <strong>Rp1.000.000</strong>, estimasi kerugian
+                    dihitung untuk beberapa holding period.
+                </p>
+
+
+                <div class="holding-period-table">
+
+                    <div class="holding-header">
+                        <span>Holding Period</span>
+                        <span>Estimated Loss</span>
+                    </div>
+
+
+                    <div class="holding-row">
+                        <span>
+                            1 Day
+                        </span>
+
+                        <strong>
+                            Rp61.817,93
+                        </strong>
+                    </div>
+
+
+                    <div class="holding-row">
+                        <span>
+                            5 Days
+                        </span>
+
+                        <strong>
+                            Rp138.229,09
+                        </strong>
+                    </div>
+
+
+                    <div class="holding-row">
+                        <span>
+                            20 Days
+                        </span>
+
+                        <strong>
+                            Rp276.458,18
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- INTERPRETATION -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    INTERPRETATION
+                </span>
+
+                <h2>
+                    Risk Interpretation
+                </h2>
+
+
+                <div class="var-insights">
+
+                    <div class="var-insight-item">
+
+                        <span class="var-insight-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Historical Risk
+                            </h3>
+
+                            <p>
+                                Historical VaR digunakan untuk mengukur
+                                potensi kerugian berdasarkan pola return
+                                yang terdapat pada data historis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="var-insight-item">
+
+                        <span class="var-insight-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Confidence Level
+                            </h3>
+
+                            <p>
+                                Analisis menggunakan tingkat signifikansi
+                                5%, yang setara dengan tingkat kepercayaan
+                                95%.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="var-insight-item">
+
+                        <span class="var-insight-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Holding Period
+                            </h3>
+
+                            <p>
+                                Estimasi kerugian berubah ketika holding
+                                period diperpanjang dari 1 hari menjadi
+                                5 dan 20 hari.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONCLUSION -->
+            <section class="detail-block">
+
+                <span class="section-label">
+                    CONCLUSION
+                </span>
+
+                <h2>
+                    Kesimpulan
+                </h2>
+
+                <p>
+                    Analisis Historical Value at Risk memberikan ukuran
+                    kuantitatif terhadap potensi kerugian investasi
+                    berdasarkan distribusi return historis.
+                </p>
+
+                <p>
+                    Pada tingkat signifikansi 5%, diperoleh Historical
+                    VaR sebesar <strong>-6.1818%</strong>. Dengan nilai
+                    investasi awal Rp1.000.000, estimasi kerugian
+                    meningkat seiring dengan holding period yang
+                    digunakan dalam analisis.
+                </p>
+
+            </section>
+
+            <div class="detail-actions">
+
+                <a href="./assets/Historical1.xlsx"
+                download
+                class="btn secondary">
+                    <i class="fas fa-download"></i>
+                    Download Excel
+                </a>
+
+            </div>
+
+            <!-- BACK -->
+            <div class="detail-back">
+
+                <a href="projects.html"
+                   class="btn primary">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                    Back to Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+<!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <h3>
+                Fajrul <span>Falla</span>
+            </h3>
+
+            <p>
+                Statistics Student & Data Analyst
+            </p>
+
+        </div>
+
+
+        <p>
+            © 2026 Fajrul Falla Kamal Musthofa.
+            All rights reserved.
+        </p>
+
+
+        <div class="socials">
+
+            <a href="https://www.linkedin.com/in/fajrul-falla-kamal-musthofa-932a87289/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
